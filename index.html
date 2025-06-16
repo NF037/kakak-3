@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Kakak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffdee9, #b5fffc);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 5s;
+    }
+    .opening {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      animation: openingAnim 1s ease-out forwards;
+      opacity: 0;
+    }
+    .opening:nth-child(1) { animation-delay: 0s; }
+    .opening:nth-child(2) { animation-delay: 1.5s; }
+    .opening:nth-child(3) { animation-delay: 3s; }
+
+    @keyframes openingAnim {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .message {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    .heart {
+      color: red;
+      font-size: 1.5rem;
+      margin-top: 10px;
+      animation: pulse 1.2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="opening">Eh orangnya dateng</div>
+  <div class="opening">Kepo yaa</div>
+  <div class="opening">Ini spesial untuk lu</div>
+
+  <div class="container">
+    <h2>Happy Birthday kakak.</h2>
+    <p class="message">
+      Teruslah jadi versi terbaik dari dirimu sendiri ya.<br>
+      Di umur lu yg sekarang aku harap lu bisa mendapatkan apapun yg lu inginkan yaa.<br>
+      Jangan pernah ngerasa sendiri, karena aku akan selalu ada.<br><br>
+      Dari adik yang selalu bangga kepada mu. <br>
+      <span class="heart">Love u kakakkk &lt;3</span>
+    </p>
+  </div>
+</body>
+</html>
